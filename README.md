@@ -19,3 +19,8 @@ Test:
 python ./save_features.py --dataset miniImagenet --model ResNet18 --method baseline --train_aug
 
 python ./test.py --dataset miniImagenet --model ResNet18 --method baseline --train_aug
+
+
+Our testbed builds upon several existing publicly available code. Specifically, we have modified and integrated the following code into this project:
+
+CloserLookFewShot:https://github.com/wyharveychen/CloserLookFewShot
