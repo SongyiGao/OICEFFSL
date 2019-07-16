@@ -75,7 +75,7 @@ if __name__=='__main__':
 
     optimization = 'Sgd'
 
-    if params.method in ['baseline', 'baseline++'] :
+    if params.method in ['baseline', 'baseline_dist'] :
         base_datamgr = SimpleDataManager(image_size, batch_size = 256)
         base_loader = base_datamgr.get_data_loader( base_file , aug = params.train_aug )
         val_datamgr = SimpleDataManager(image_size, batch_size = 64)
