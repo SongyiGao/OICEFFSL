@@ -8,7 +8,7 @@ import numpy as np
 import torch.nn.functional as F
 
 class BaselineTrain(nn.Module):
-    def __init__(self, model_func, num_class):
+    def __init__(self, model_func, num_class,loss_type):
         super(BaselineTrain, self).__init__()
         self.feature    = model_func()
 
